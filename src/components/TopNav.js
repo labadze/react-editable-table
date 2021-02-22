@@ -19,9 +19,9 @@ class TopNav extends Component {
                     <Link to={'/'} className={"w3-bar-item w3-button w3-wide"}>LOGO</Link>
                     <div className={"w3-right w3-hide-small"}>
                         <Link to={'/'} className={"w3-bar-item w3-button"}>MAIN</Link>
-                        <Link to={'/table'} className={"w3-bar-item w3-button"}>TABLE</Link>
-                        <Link to={'/account'} className={"w3-bar-item w3-button"}> ACCOUNT</Link>
-                        <button onClick={this.props.logOff} className={'w3-bar-item w3-btn'}>LOG OUT</button>
+                        <Link to={'/table'} className={"w3-bar-item w3-button"}>EDIT TABLE</Link>
+                        {/*<Link to={'/account'} className={"w3-bar-item w3-button"}> ACCOUNT</Link>*/}
+                        {/*<button onClick={this.props.logOff} className={'w3-bar-item w3-btn'}>LOG OUT</button>*/}
                     </div>
 
                     <button className={"w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"}

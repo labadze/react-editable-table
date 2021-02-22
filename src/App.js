@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import TopNav from "./components/TopNav";
 import AccountPage from "./pages/AccountPage";
 import TablePage from "./pages/TablePage";
+import TableViewPage from "./pages/TableViewPage";
 
 class App extends Component {
   constructor(props) {
@@ -77,9 +78,9 @@ class App extends Component {
           ) : (
               <div>
                 <TopNav logOff={this.logOut}/>
-                <Route name={"main"} exact path={"/"} component={MainPage}/>
+                <Route name={"TableView"} exact path={"/"} component={TableViewPage}/>
                 <Route name={'Table'} exact path={'/table'} component={TablePage} />
-                <Route name={"account"} exact path={"/account"} component={AccountPage}/>
+                {/*<Route name={"account"} exact path={"/account"} component={AccountPage}/>*/}
               </div>
           )}
         </Router>
