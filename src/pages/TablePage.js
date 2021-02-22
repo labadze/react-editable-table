@@ -194,6 +194,60 @@ class TablePage extends Component {
                     october: 8265357,
                     november: 8389337,
                     december: 8515177
+                },
+                {
+                    id: 17,
+                    item: 'Depreciation CoGS',
+                    year: 2020,
+                    last_12_months: 13981835,
+                    january: 1072127,
+                    february: 1088209,
+                    march: 1104532,
+                    april: 1121100,
+                    may: 1137917,
+                    jun: 1154985,
+                    july: 1172310,
+                    august: 1189895,
+                    september: 1207743,
+                    october: 1225859,
+                    november: 1244247,
+                    december: 1262911
+                },
+                {
+                    id: 18,
+                    item: 'Depreciation CoGS',
+                    year: 2020,
+                    last_12_months: 13981835,
+                    january: 1072127,
+                    february: 1088209,
+                    march: 1104532,
+                    april: 1121100,
+                    may: 1137917,
+                    jun: 1154985,
+                    july: 1172310,
+                    august: 1189895,
+                    september: 1207743,
+                    october: 1225859,
+                    november: 1244247,
+                    december: 1262911
+                },
+                {
+                    id: 19,
+                    item: 'CoGS',
+                    year: 2020,
+                    last_12_months: 94272531,
+                    january: 7228817,
+                    february: 7337249,
+                    march: 7447308,
+                    april: 7559018,
+                    may: 7672403,
+                    jun: 7787489,
+                    july: 7904301,
+                    august: 8022866,
+                    september: 8143209,
+                    october: 8265357,
+                    november: 8389337,
+                    december: 8515177
                 }
             ]
         };
@@ -429,7 +483,14 @@ class TablePage extends Component {
 
                 <div className={'w3-rest'}>
                     <div className={"w3-container"}>
-                        <h3>Data Table</h3>
+                        <h3 className={'w3-center'}>Data Table</h3>
+                        <p>To edit item click on table contents activate input, once you done press <code>Enter</code>.
+                            <br/>
+                            If you changed your mind click inside input and press <code>Escape</code>
+                            <br/>
+                            <strong>Tested on FireFox, Google Chrome and OSX Safari</strong>
+                            <code>Your browser must support javascript.</code>
+                        </p>
                         <table className={'w3-table-all w3-small'}>
                             {this.state.cols.length > 0 ? (
                                 <thead>
